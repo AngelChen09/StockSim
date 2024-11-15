@@ -8,4 +8,5 @@ public enum EventType {
     UPDATE_ASSET,
     SWITCH_PANEL,
     DIALOG,
+    VIEW_HISTORY,
 }
