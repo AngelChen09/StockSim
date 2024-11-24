@@ -128,7 +128,7 @@ public class MarketTracker {
             // notify observer of executionPrice update
             System.out.println("Notifying observers...");
             MarketObserver.Instance().onMarketUpdate();
-        } catch (RateLimitExceededException | IOException e) {
+        } catch (RateLimitExceededException e) {
             // on rate limit, increase the update interval and reset the rounds counter
             currentUpdateInterval += UPDATE_INTERVAL_ADJUSTMENT_RATE;
             roundsWithoutRateLimit = 0;
