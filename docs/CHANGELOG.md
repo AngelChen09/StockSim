@@ -17,6 +17,8 @@
 
 - Refactored `StockMarket` to `MarketTracker`
 - Refined all ui components to have a consistent style
+- Changed `StockDataAccessInterface` to have two methods to do different api calls
+- Implemented new methods from `StockDataAccessInterface` in `InMemoryStockDataAccessObject` and `StockDataAccessObject`
 
 ### Bug Fixes
 
