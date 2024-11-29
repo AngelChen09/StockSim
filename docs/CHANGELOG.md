@@ -24,6 +24,7 @@
 - Added a new `addTransaction` method in `User.java`
 - Implemented DTO objects for database data transfer
 - Implemented asynchronous stock data update for performance enhancement
+- Rebased ViewHistory's dashboard button to interact with `ViewHistoryController`
 
 ### Bug Fixes
 
