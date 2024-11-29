@@ -5,6 +5,7 @@ import use_case.view_history.ViewHistoryOutputData;
 import utility.ServiceManager;
 import view.ViewManager;
 import view.view_events.DialogEvent;
+import view.view_events.SwitchPanelEvent;
 import view.view_events.UpdateTransactionHistoryEvent;
 
 import javax.swing.text.View;
@@ -29,6 +30,10 @@ public class ViewHistoryPresenter implements ViewHistoryOutputBoundary {
                 new UpdateTransactionHistoryEvent(
                         outputData.transactionHistory()
                 )
+        );
+        ViewManager.Instance().broadcastEvent(
+                new SwitchPanelEvent(
+                        "TransactionHistoryPanel")
         );
     }
 
