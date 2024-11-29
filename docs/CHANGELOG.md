@@ -25,6 +25,7 @@
 - Implemented DTO objects for database data transfer
 - Implemented asynchronous stock data update for performance enhancement
 - Rebased ViewHistory's dashboard button to interact with `ViewHistoryController` instead of directly initiating switch panel event
+- Renamed `StockDataAccessObject` to `FinnhubStockDataAccessObject` to specify stock dao's api
 
 ### Bug Fixes
 
